@@ -4,26 +4,22 @@
    let package = Package(
        name: "ZaloSDK",
        platforms: [
-           // Add your supported platforms here:
-           .iOS(.v9) // Ví dụ: Yêu cầu iOS 9 trở lên
+           .iOS(.v9) 
        ],
        products: [
-           // Products define the executables and libraries a package produces, and make them visible to other packages.
+           
            .library(
                name: "ZaloSDK",
                targets: ["ZaloSDK"])
        ],
-       dependencies: [
-           // List any dependencies here. If the package has no dependencies, you can remove this section.
-       ],
+       dependencies: [],
        targets: [
            .target(
                name: "ZaloSDK",
                dependencies: [],
-               path: "ZaloSDK", // Adjust the path to your source files accordingly
+               path: "ZaloSDK/Frameworks", // Adjust the path to your source files accordingly
                resources: [] // Define any resources like images or storyboards if available
            )
        ],
-       swiftLanguageVersions: [.v5] // Specify the Swift language version if needed
    )
    
